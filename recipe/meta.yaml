@@ -11,12 +11,7 @@ source:
     folder: src
 
 build:
-  number: 0
-  skip: True  # [win]
-  script:
-    - cd src
-    - go install -v ./cmd/kubeseal
-    - go-licenses save ./cmd/kubeseal --save_path ../library_licenses
+  number: 1
 
 requirements:
   build:
