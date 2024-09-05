@@ -11,8 +11,7 @@ source:
     folder: src
 
 build:
-  number: 0
-  skip: True  # [win]
+  number: 1
   script:
     - cd src
     - go install -v ./cmd/kubeseal
