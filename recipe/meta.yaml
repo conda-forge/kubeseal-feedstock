@@ -1,5 +1,5 @@
 {% set name = "kubeseal" %}
-{% set version = "0.27.1" %}
+{% set version = "0.38.4" %}
 
 package:
   name: kubeseal
@@ -7,12 +7,12 @@ package:
 
 source:
   - url: https://github.com/bitnami-labs/sealed-secrets/archive/refs/tags/v{{ version }}.tar.gz
-    sha256: 36296b854d66a21c14bc6b80037b4cac54b2a5e2965c70fb826e0558b57cb0e1
+    sha256: 7076a3278ac29e5f3f8ac6676414e4c24f01303c1405b99a1caebe88f5977d7e
     folder: src
 
 build:
   number: 0
-  skip: True  # [win]
+  skip: true  # [win]
   script:
     - cd src
     - go install -v ./cmd/kubeseal
